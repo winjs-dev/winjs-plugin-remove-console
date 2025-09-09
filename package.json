@@ -1,5 +1,5 @@
 {
-  "name": "winjs-plugin-template",
+  "name": "@winner-fed/plugin-remove-console",
   "keywords": [
     "winjs",
     "plugin",
@@ -14,7 +14,7 @@
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/winjs-dev/winjs-plugin-template.git"
+    "url": "git+https://github.com/winjs-dev/winjs-plugin-remove-console.git"
   },
   "license": "MIT",
   "type": "module",
@@ -42,6 +42,9 @@
   },
   "simple-git-hooks": {
     "pre-commit": "npm run lint:write"
+  },
+  "dependencies": {
+    "unplugin-remove": "1.0.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.1.1",

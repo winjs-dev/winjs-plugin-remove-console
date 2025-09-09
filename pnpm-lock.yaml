@@ -11,6 +11,9 @@ importers:
       '@winner-fed/utils':
         specifier: '*'
         version: 0.17.1
+      unplugin-remove:
+        specifier: 1.0.3
+        version: 1.0.3(rollup@4.46.4)
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.1.1
@@ -998,6 +1001,15 @@ packages:
 
   '@rolldown/pluginutils@1.0.0-beta.33':
     resolution: {integrity: sha512-she25NCG6NoEPC/SEB4pHs5STcnfI4VBFOzjeI63maSPrWME5J2XC8ogrBgp8NaE/xzj28/kbpSaebiMvFRj+w==}
+
+  '@rollup/pluginutils@5.3.0':
+    resolution: {integrity: sha512-5EdhGZtnu3V88ces7s53hhfK5KSASnJZv8Lulpc04cWO3REESroJXg73DFsOmgbU2BhwV0E20bu2IDZb3VKW4Q==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
 
   '@rollup/rollup-android-arm-eabi@4.46.4':
     resolution: {integrity: sha512-B2wfzCJ+ps/OBzRjeds7DlJumCU3rXMxJJS1vzURyj7+KBHGONm7c9q1TfdBl4vCuNMkDvARn3PBl2wZzuR5mw==}
@@ -3858,6 +3870,9 @@ packages:
       '@vueuse/core':
         optional: true
 
+  unplugin-remove@1.0.3:
+    resolution: {integrity: sha512-BZMt9v8Y/Z27cY7YQv+DpcW928znjP1cqplBXOirbANiFQtM2YCdiyNAJhHCvjppT0lScNn1aDrQnXqnRp32pQ==}
+
   unplugin-utils@0.2.5:
     resolution: {integrity: sha512-gwXJnPRewT4rT7sBi/IvxKTjsms7jX7QIDLOClApuZwR49SXbrB1z2NLUZ+vDHyqCj/n58OzRRqaW+B8OZi8vg==}
     engines: {node: '>=18.12.0'}
@@ -3874,6 +3889,10 @@ packages:
         optional: true
       '@nuxt/kit':
         optional: true
+
+  unplugin@1.16.1:
+    resolution: {integrity: sha512-4/u/j4FrCKdi17jaxuJA0jClGxB1AvU2hw/IuayPc4ay1XGaJs/rbb4v5WKwAjNifjmXK9PIFyuPiaK8azyR9w==}
+    engines: {node: '>=14.0.0'}
 
   unplugin@2.3.7:
     resolution: {integrity: sha512-zU7Osb4D5YNc9eLKsKaG6WQi9soLS+Yd9MDhOHlhAR+uoNy3BmWuddjLMhJpBpSBSIYtK5/MQvAWx9nAURTN6Q==}
@@ -4851,6 +4870,14 @@ snapshots:
       playwright: 1.54.2
 
   '@rolldown/pluginutils@1.0.0-beta.33': {}
+
+  '@rollup/pluginutils@5.3.0(rollup@4.46.4)':
+    dependencies:
+      '@types/estree': 1.0.8
+      estree-walker: 2.0.2
+      picomatch: 4.0.3
+    optionalDependencies:
+      rollup: 4.46.4
 
   '@rollup/rollup-android-arm-eabi@4.46.4':
     optional: true
@@ -8524,6 +8551,19 @@ snapshots:
       unplugin: 2.3.7
       unplugin-utils: 0.2.5
 
+  unplugin-remove@1.0.3(rollup@4.46.4):
+    dependencies:
+      '@babel/core': 7.28.3
+      '@babel/generator': 7.28.3
+      '@babel/parser': 7.28.3
+      '@babel/traverse': 7.28.3
+      '@rollup/pluginutils': 5.3.0(rollup@4.46.4)
+      magic-string: 0.30.17
+      unplugin: 1.16.1
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+
   unplugin-utils@0.2.5:
     dependencies:
       pathe: 2.0.3
@@ -8544,6 +8584,11 @@ snapshots:
       '@babel/parser': 7.28.3
     transitivePeerDependencies:
       - supports-color
+
+  unplugin@1.16.1:
+    dependencies:
+      acorn: 8.15.0
+      webpack-virtual-modules: 0.6.2
 
   unplugin@2.3.7:
     dependencies:
