@@ -9,9 +9,11 @@
     "rslib",
     "rsbuild",
     "typescript",
-    "biome"
+    "biome",
+    "remove-console"
   ],
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A WinJS-compatible plugin that removes console statements from code during build time to optimize production code",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/winjs-dev/winjs-plugin-remove-console.git"
